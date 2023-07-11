@@ -49,6 +49,11 @@ gem 'bootstrap', '~> 5.2', '>= 5.2.3'
 gem 'flexslider', '~> 2.2'
 gem 'lightbox-bootstrap-rails', '~> 5.1', '>= 5.1.0.1'
 gem 'devise'
+gem 'themify-icons-rails' , github: 'scratch-soft/themify-icons-rails'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'will_paginate', '~> 3.1.0'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
