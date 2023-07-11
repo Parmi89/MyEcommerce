@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
+  get 'admin/index'
+  devise_for :admins
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root 'landing#index'
 
-  # Defines the root path route ("/")
-    root to: "landing#index"
 end
