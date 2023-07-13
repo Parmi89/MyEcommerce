@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+puts "Creating Admin"
+Admin.create_with(password: '123123', password_confirmation: '123123')
+         .find_or_create_by(email: 'admin@example.com')
+if Setting.last.nil?
+  puts "Add Setting"
+  Setting.find_or_create_by(shipping_price: 0)
+end

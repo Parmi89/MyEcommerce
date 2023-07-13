@@ -14,6 +14,16 @@ class DeviseCreateAdmins < ActiveRecord::Migration[7.0]
       ## Rememberable
       t.datetime :remember_created_at
 
+      ## Data admin(for my)
+      t.string :first_name
+      t.string :last_name
+      t.integer :DNI
+      t.integer :cell_phone
+      t.integer :facebook
+      t.integer :instagrame
+      t.integer :address
+      t.string :shipping_address
+
       ## Trackable
       # t.integer  :sign_in_count, default: 0, null: false
       # t.datetime :current_sign_in_at
@@ -38,7 +48,7 @@ class DeviseCreateAdmins < ActiveRecord::Migration[7.0]
 
     add_index :admins, :email,                unique: true
     add_index :admins, :reset_password_token, unique: true
-    # add_index :admins, :confirmation_token,   unique: true
-    # add_index :admins, :unlock_token,         unique: true
+    add_index :admins, :confirmation_token,   unique: true
+    add_index :admins, :unlock_token,         unique: true
   end
 end
