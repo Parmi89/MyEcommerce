@@ -1,10 +1,25 @@
-<div class="cl-sidebar">
-    <div class="cl-toggle"><i class="fa fa-bars"></i></div>
-    <div class="cl-navblock">
-      <div class="menu-space">
-        <div class="content">
-  
-          <ul class="cl-vnavigation">
+	<div class="cl-sidebar">
+  <div class="cl-toggle">
+    <i class="fa fa-bars"></i>
+  </div>
+  <div class="cl-navblock">
+    <div class="menu-space">
+      <div class="content">
+        <%= link_to root_path do %>
+          <div class="sidebar-logo">
+            <div class="logo text-center">
+              <div class="row">
+                <div class="col-lg-12 hidden-sm hidden-xs">
+                  <%= image_tag 'logo-light.png', class: "logo-cms" %>
+                </div>
+                <div class="hidden-lg hidden-md visible-xs-12">
+                  <%= image_tag '', class: "logo-mini"%>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+             <ul class="cl-vnavigation">
             <li><a href="/" target="_blank"><i class="fa fa-chrome"></i><span>Ver pagina web</span></a>
             </li>
             <li><a href="#"><i class="fa fa-circle"></i><span>Categoria</span></a>
@@ -24,12 +39,13 @@
                 <li><a href="layout-boxed.html"><span class="label label-primary pull-right">New</span>Boxed Layout</a></li>
                 <li><a href="layout-topbar.html"><span class="label label-primary pull-right">New</span>Top Menu</a></li>
               </ul>
+              
             </li>
             <li><a href="#"><i class="fa fa-question"></i><span>Preguntas frecuentes</span></a>
               <ul class="sub-menu">
-                <li>El codigo va aqui xD </span></a></li>
-                <li><a href="layout-topbar.html"><span class="label label-primary pull-right">New</span>Top Menu</a></li>
-              </ul>
+                <li><%= link_to 'Crear', new_frequentquestion_path, class:'' %></span></a></li>
+                <li><%= link_to 'Ver',  class:'' %></span></a></li>              
+                </ul>
             </li>
             <li><a href="#"><i class="fa fa-id-card-o"></i><span>Sobre nosotros</span></a>
               <ul class="sub-menu">
@@ -49,16 +65,12 @@
                 <li><a href="layout-topbar.html"><span class="label label-primary pull-right">New</span>Top Menu</a></li>
               </ul>
             </li>
-                        <li><a href="#"><i class="fa fa-usd"></i><span>Ventas</span></a>
+            <li><a href="#"><i class="fa fa-usd"></i><span>Ventas</span></a>
               <ul class="sub-menu">
                 <li><a href="layout-boxed.html"><span class="label label-primary pull-right">New</span>Boxed Layout</a></li>
                 <li><a href="layout-topbar.html"><span class="label label-primary pull-right">New</span>Top Menu</a></li>
               </ul>
-            </li>
-          </ul>
-        </div>
-      </div>  
+      </div>
     </div>
   </div>
 </div>
-
