@@ -1,4 +1,4 @@
-class Admin::FrequentquestionsController < ApplicationController
+class FrequentquestionsController < ApplicationController
   before_action :set_frequentquestion, only: %i[ show edit update destroy ]
 
   # GET /frequentquestions or /frequentquestions.json
