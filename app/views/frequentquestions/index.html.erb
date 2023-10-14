@@ -1,14 +1,15 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Frequentquestions</h1>
+<h1>FrequentquestionsINDEX</h1>
 
 <div id="frequentquestions">
   <% @frequentquestions.each do |frequentquestion| %>
     <%= render frequentquestion %>
     <p>
-      <%= link_to "Show this frequentquestion", frequentquestion %>
+    <% if current_admin %>
+      <%= link_to "Editar", frequentquestion %> 
+    <%end%>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New frequentquestion", new_frequentquestion_path %>

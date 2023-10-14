@@ -55,6 +55,7 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'will_paginate', '~> 3.1.0'
 
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 

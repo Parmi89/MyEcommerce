@@ -9,19 +9,19 @@
                         <span class="sub">hello@foundry.net</span>
                     </div>
                     <div class="module right">
-                         <% if current_user %>
+                        <% if current_user %>
             <%= link_to 'CERRAR SESION', destroy_user_session_path, class: "btn btn-sm btn-filled" %>
-          <% else %>
+        <% else %>
             <%= link_to 'CREAR CUENTA', new_user_registration_path, class: "btn btn-sm btn-filled" %>
             <%= link_to 'INGRESAR', new_user_session_path, class: "btn btn-sm btn-filled" %>
-          <% end %>
+        <% end %>
                     </div>
                 </div>
                 <div class="nav-bar">
                     <div class="module left">
                         <a href="/">
-                           <%= image_tag 'logo-light', class: "logo logo-light" %>
-                           <%= image_tag 'logo-dark', class: "logo logo-dark" %>
+                        <%= image_tag 'logo-light', class: "logo logo-light" %>
+                        <%= image_tag 'logo-dark', class: "logo logo-dark" %>
                         </a>
                     </div>
                     <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
@@ -31,15 +31,16 @@
                         <div class="module left">
                             <ul class="menu">
                                 <li class="">
-                                    <a href="#">
-                                        Preguntas Frecuentes
                                     </a>
                                 </li>
                                 <li class="">
-                                    <a href="#">
-                                        Sobre Nosotros
-                                    </a>
+                                <%= link_to 'Preguntas frecuentes', class:'' %>                              
                                 </li>
+                                <li class="">
+                                    <a href="#">
+                                        Sobre nosotros
+                                    </a>
+                                </li>   
                                 <li class="">
                                     <a href="#">
                                         Contactanos

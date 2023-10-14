@@ -1,7 +1,7 @@
 class FrequentquestionsController < ApplicationController
   before_action :set_frequentquestion, only: %i[ show edit update destroy ]
-  before_action :authenticate_admin!
-  layout 'admin'
+  # before_action :authenticate_admin!
+   layout 'admin'
   # GET /frequentquestions or /frequentquestions.json
   def index
     @frequentquestions = Frequentquestion.all
